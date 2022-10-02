@@ -27,14 +27,14 @@ namespace V2_1 {
 namespace implementation {
 
 static constexpr const char* kModePath =
-    "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode";
+        "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode";
 static constexpr const char* kDefaultPath = "/data/vendor/display/default_display_mode";
 
 const std::map<int32_t, DisplayModes::ModeInfo> DisplayModes::kModeMap = {
-    {0, {"Standard", "default"}},
-    {1, {"sRGB", "srgb"}},
-    {2, {"DCI P3", "dci-p3"}},
-    {3, {"Wide Color", "widecolor"}},
+        {0, {"Standard", "default"}},
+        {1, {"sRGB", "srgb"}},
+        {2, {"DCI P3", "dci-p3"}},
+        {3, {"Wide Color", "widecolor"}},
 };
 
 DisplayModes::DisplayModes() : mDefaultModeId(0) {

@@ -27,7 +27,7 @@ namespace V2_1 {
 namespace implementation {
 
 static constexpr const char* kHbmPath =
-    "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm";
+        "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm";
 
 Return<bool> SunlightEnhancement::isEnabled() {
     std::ifstream file(kHbmPath);
